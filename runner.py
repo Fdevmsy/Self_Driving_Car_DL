@@ -47,7 +47,7 @@ def get_model(model_file):
 
 def pub_steering(steering):
     move_cmd = Twist()
-    move_cmd.linear.x = 0.5
+    move_cmd.linear.x = 1.2
     move_cmd.angular.z = steering
 
     node.pub.publish(move_cmd)
